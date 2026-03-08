@@ -1,4 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- PLEASE REMOVE THE EXAMPLES YOU HAVE NO INTEREST IN BEFORE ENABLING THIS FILE
@@ -86,5 +85,19 @@ return {
         Rule("a", "a", "-vim")
       )
     end,
+  },
+
+  {
+    "dhananjaylatkar/cscope_maps.nvim",
+    dependencies = {
+      "nvim-telescope/telescope.nvim", -- optional [for picker="telescope"]
+      "ibhagwan/fzf-lua", -- optional [for picker="fzf-lua"]
+      "echasnovski/mini.pick", -- optional [for picker="mini-pick"]
+      "folke/snacks.nvim", -- optional [for picker="snacks"]
+    },
+    opts = {
+    -- USE EMPTY FOR DEFAULT OPTIONS
+    -- DEFAULTS ARE LISTED BELOW
+    },
   },
 }
